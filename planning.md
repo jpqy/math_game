@@ -33,8 +33,7 @@ An object representing a single turn in the game
 
 **Behaviour**:
 - `initialize` - Only parameter = current player. Also generates a question object.
-- `to_s` - print out the question in formatted string (i.e. `What does 5 plus 3 equal?`)
-- `right_answer?` - check if the supplied answer parameter is correct
+- `to_s` - Print out `NEW TURN` followed by the question prompt including the player's name
 
 ## Game
 An object representing the current game. Tracks the players and handles the progression of the game.
