@@ -17,7 +17,8 @@ class Turn
     if @question.correct_answer?(answer)
       "#{@player.name}: Correctamundo!"
     else
-      "#{@player.name}: Wrong answer! Go back to kindergarten!"
+      @player.penalize
+      "#{@player.name}: Wrong answer! Go back to kindergarten!"      
     end
   end
 end

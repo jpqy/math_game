@@ -1,5 +1,5 @@
 class Player
-  attr_reader :name
+  attr_reader :name, :lives
 
   def initialize(name)
     @name = name
@@ -15,6 +15,6 @@ class Player
   end
 
   def to_s
-    "#{self.name}: #{@lives}"
+    "#{self.name}: #{@lives}/3"
   end
 end
